@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name":"budget manager",
+    "version":"1.0",
+    "description": "Expenses Tracker",
+    "icons":{
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "16":"icon16.png"
+    },
+    "browser_action":{
+        "default_icon":"icon16.png",
+        "default_popup":"hello.html"
+    },
+    "background":{
+        "scripts": ["eventPage.js"],
+        "persistent":false
+    },
+    "options_page":"option.html",
+    "permissions":[
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}
